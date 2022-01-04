@@ -1,21 +1,17 @@
-import os
+import webbrowser
+from webbrowser import *
 import subprocess
 
-paths = {
-    'VsCode': "/Applications/Visual Studio Code.app",
-    'Chrome': "/Applications/Google Chrome.app",
-    'terminal': "/System/Applications/Utilities/Terminal.app",
-    'Github':"/Applications/GitHub Desktop.app"
-}
 
 def open_Vscode():
-    os.startfile(paths['VsCode'])
+   subprocess.run(["/usr/bin/open", "-a", "Visual Studio Code"])
     
 def open_Chrome():
-    os.startfile(paths['Chrome'])
+    browser = webbrowser.get('Chrome')
+    browser.open('https://www.google.com/')
 
 def open_github():
-    os.startfile(paths['Github'])
+    subprocess.run(["/usr/bin/open", "-a", "GitHub Desktop"])
     
 def open_cmd():
-    os.startfile(paths['terminal'])
+    subprocess.run(["/usr/bin/open", "-a", "Terminal"])
