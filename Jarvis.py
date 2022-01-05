@@ -87,10 +87,10 @@ if __name__ == '__main__':
         # elif 'open calculator' in query:
         #     open_calculator()
 
-        # elif 'ip address' in query:
-        #     ip_address = find_my_ip()
-        #     speak(f'Your IP Address is {ip_address}.\n For your convenience, I am printing it on the screen sir.')
-        #     print(f'Your IP Address is {ip_address}')
+        elif 'ip address' in query:
+            ip_address = find_my_ip()
+            speak(f'Your IP Address is {ip_address}.\n For your convenience, I am printing it on the screen sir.')
+            print(f'Your IP Address is {ip_address}')
 
         elif 'wikipedia' in query:
             speak('What do you want to search on Wikipedia, sir?')
